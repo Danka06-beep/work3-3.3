@@ -1,15 +1,16 @@
 package com.company;
 
 public class Song {
-    private Track [] tracks;
+    private Track[] tracks;
 
-    public Song(Track[] track) {
-        this.tracks = track;
+    public Song(Track[] tracks) {
+        this.tracks = tracks;
     }
-    public void playSong() {
+    public void playSong(){
         for (Track track : tracks) {
-            track.Play();
+            track.play();
             System.out.println();
         }
     }
 }
+

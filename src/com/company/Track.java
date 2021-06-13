@@ -6,10 +6,9 @@ public class Track {
     public Track(Instrument[] track) {
         this.tracks = track;
     }
-public void Play (){
-    for (Instrument track : tracks) {
-        track.printNote();
-
-    }
+    public void play(){
+        for (Instrument track : tracks) {
+            track.printNote();
+        }
     }
 }

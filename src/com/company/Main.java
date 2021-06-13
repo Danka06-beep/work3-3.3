@@ -4,8 +4,8 @@ import java.util.Random;
 
 public class Main {
 
-
     static int length = 10;
+
 
     public static void main(String[] args) {
         Random random = new Random();
@@ -27,10 +27,11 @@ public class Main {
             } else {
                 instruments[i] = new Instrument();
             }
-            Track pianoTrack = new Track(instruments);
 
-            Song song = new Song(new Track[] {guitarTrack,pianoTrack });
-            song.playSong();
         }
+        Track pianoTrack = new Track(instruments);
+
+        Song song = new Song(new Track[] {guitarTrack,pianoTrack });
+        song.playSong();
     }
 }
