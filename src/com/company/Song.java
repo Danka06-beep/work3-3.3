@@ -9,7 +9,7 @@ public class Song {
     public void playSong(){
         for (Track track : tracks) {
             track.play();
-            System.out.println();
+            System.out.print("");
         }
     }
 }
